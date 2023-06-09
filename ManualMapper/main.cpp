@@ -12,9 +12,9 @@
 //todo a double backslash is just the way you write a single backslash in C++. ONLY FOR PROGRAM CODE
 //todo "\\" - this string is a single backslash. "\\\\" - this string is a double backslash.
 
-const char szDLLFile[] = "E:\\GameMod\\crackme\\earlier crackmes assorted\\HelloWorldDll\\hello-world-x64.dll";
+const char szDLLFile[] = "E:\\GameMod\\crackme\\earlier_crackmes_assorted\\HelloWorldDll\\hello-world-x64.dll";
 
-const char szProc[] = "Test Console.exe";
+const char szProc[] = "ManualMapper.exe";
 
 //? Change to Multibyte character set and disable Incermental linking in Linker option
 //! Manifest option in linker to be changed as require  Admin

@@ -9,7 +9,7 @@
 
 using f_LoadLibraryA = HMODULE(WINAPI*)(_In_ LPCSTR lpLibFileName); // LoadLibraryA function poiter typedef alias
 
-using f_GetProcAddress = FARPROC(WINAPI*)(_In_ HMODULE hModule, LPCSTR lpProcName); //GetProcAddres function pointer typedef alias
+using f_GetProcAddress = UINT_PTR(WINAPI*)(_In_ HMODULE hModule, LPCSTR lpProcName); //GetProcAddres function pointer typedef alias
 
 using f_DLL_ENTRY_POINT = BOOL(WINAPI*)(void* hDll, DWORD dwReason, void* pReserved);
 
@@ -19,7 +19,7 @@ struct MANUAL_MAPPING_DATA
 {
 	f_LoadLibraryA pLoadLibraryA{};
 	f_GetProcAddress pGetProcAddress{};
-	HMODULE hModule{};
+	HMODULE hModule{}; //! Pointer to base address of module
 
 };
 
